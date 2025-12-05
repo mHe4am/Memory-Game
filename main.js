@@ -4,9 +4,9 @@ document.querySelector(".start-screen .start-btn").onclick = () => {
   let playerName = prompt("What's your name?");
 
   if (playerName == null || playerName == "") {
-    document.querySelector(".game-info .name span").innerHTML = "Unknown";
+    document.querySelector(".game-info .name span").textContent = "Unknown";
   } else {
-    document.querySelector(".game-info .name span").innerHTML = playerName;
+    document.querySelector(".game-info .name span").textContent = playerName;
   }
 
   document.querySelector(".start-screen").remove();
